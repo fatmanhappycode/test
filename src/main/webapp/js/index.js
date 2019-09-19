@@ -4,6 +4,7 @@ $(document).on("click","#login",function () {
     $.ajax({
         url:"/login",
         type:"POST",
+        dataType:"json",
         data:{username:username, password:password},
         success:function (result) {
             if (result.code == 200) {
