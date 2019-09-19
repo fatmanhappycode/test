@@ -16,7 +16,7 @@ public class UserDaoTest {
     @Test
     public void testLogin() throws SQLException {
         UserDao userDao = DaoFactory.getUserDao();
-        User user = userDao.login("lsh","password");
+        User user = userDao.login("lsh","123456");
         System.out.println(user);
     }
 }

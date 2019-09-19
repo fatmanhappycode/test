@@ -57,4 +57,7 @@
         <appender-ref ref="FILE"/>
         <appender-ref ref="WARN_FILE"/>
     </root>
+    <logger name="druid.sql" level="DEBUG">
+        <appender-ref ref="STDOUT"/>
+    </logger>
 </configuration>

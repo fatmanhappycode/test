@@ -84,3 +84,129 @@ connection.class:class com.alibaba.druid.pool.DruidPooledConnection
 {dataSource-1} inited
 2019-09-19 16:21:53 [main] INFO  com.alibaba.druid.pool.DruidDataSource - 
 {dataSource-1} inited
+2019-09-19 16:30:27 [main] DEBUG druid.sql.Connection - 
+{conn-10001,procId-68} connected
+2019-09-19 16:30:27 [main] DEBUG druid.sql.Connection - 
+{conn-10002,procId-69} connected
+2019-09-19 16:30:27 [main] INFO  com.alibaba.druid.pool.DruidDataSource - 
+{dataSource-1} inited
+2019-09-19 16:30:27 [main] DEBUG druid.sql.Connection - 
+{conn-10002} pool-connect
+2019-09-19 16:30:27 [main] DEBUG druid.sql.ResultSet - 
+{conn-10002, pstmt-20000, rs-50000} open
+2019-09-19 16:30:27 [main] DEBUG druid.sql.ResultSet - 
+{conn-10002, pstmt-20000, rs-50000} Header: [id, username, password]
+2019-09-19 16:30:27 [main] DEBUG druid.sql.ResultSet - 
+{conn-10002, pstmt-20000, rs-50000} Result: [2, admin, admin]
+2019-09-19 16:30:27 [main] DEBUG druid.sql.ResultSet - 
+{conn-10002, pstmt-20000, rs-50000} closed
+2019-09-19 16:30:27 [main] DEBUG druid.sql.Connection - 
+{conn-10002} pool-recycle
+2019-09-19 16:30:52 [main] DEBUG druid.sql.Connection - 
+{conn-10001,procId-70} connected
+2019-09-19 16:30:52 [main] DEBUG druid.sql.Connection - 
+{conn-10002,procId-71} connected
+2019-09-19 16:30:52 [main] INFO  com.alibaba.druid.pool.DruidDataSource - 
+{dataSource-1} inited
+2019-09-19 16:30:52 [main] DEBUG druid.sql.Connection - 
+{conn-10002} pool-connect
+2019-09-19 16:30:52 [main] DEBUG druid.sql.ResultSet - 
+{conn-10002, pstmt-20000, rs-50000} open
+2019-09-19 16:30:52 [main] DEBUG druid.sql.ResultSet - 
+{conn-10002, pstmt-20000, rs-50000} Header: [id, username, password]
+2019-09-19 16:30:52 [main] DEBUG druid.sql.ResultSet - 
+{conn-10002, pstmt-20000, rs-50000} Result: [2, admin, admin]
+2019-09-19 16:30:52 [main] DEBUG druid.sql.ResultSet - 
+{conn-10002, pstmt-20000, rs-50000} closed
+2019-09-19 16:30:52 [main] DEBUG druid.sql.Connection - 
+{conn-10002} pool-recycle
+2019-09-19 16:31:34 [main] DEBUG druid.sql.Connection - 
+{conn-10001,procId-72} connected
+2019-09-19 16:31:34 [main] DEBUG druid.sql.Connection - 
+{conn-10002,procId-73} connected
+2019-09-19 16:31:34 [main] INFO  com.alibaba.druid.pool.DruidDataSource - 
+{dataSource-1} inited
+2019-09-19 16:31:34 [main] DEBUG druid.sql.Connection - 
+{conn-10002} pool-connect
+2019-09-19 16:31:34 [main] DEBUG druid.sql.ResultSet - 
+{conn-10002, pstmt-20000, rs-50000} open
+2019-09-19 16:31:34 [main] DEBUG druid.sql.ResultSet - 
+{conn-10002, pstmt-20000, rs-50000} Header: [id, username, password]
+2019-09-19 16:31:34 [main] DEBUG druid.sql.ResultSet - 
+{conn-10002, pstmt-20000, rs-50000} Result: [1, lsh, 123456]
+2019-09-19 16:31:34 [main] DEBUG druid.sql.ResultSet - 
+{conn-10002, pstmt-20000, rs-50000} closed
+2019-09-19 16:31:34 [main] DEBUG druid.sql.Connection - 
+{conn-10002} pool-recycle
+2019-09-19 16:32:04 [main] DEBUG druid.sql.Connection - 
+{conn-10001,procId-74} connected
+2019-09-19 16:32:04 [main] DEBUG druid.sql.Connection - 
+{conn-10002,procId-75} connected
+2019-09-19 16:32:04 [main] INFO  com.alibaba.druid.pool.DruidDataSource - 
+{dataSource-1} inited
+2019-09-19 16:32:04 [main] DEBUG druid.sql.Connection - 
+{conn-10002} pool-connect
+2019-09-19 16:32:04 [main] DEBUG druid.sql.ResultSet - 
+{conn-10002, pstmt-20000, rs-50000} open
+2019-09-19 16:32:04 [main] DEBUG druid.sql.ResultSet - 
+{conn-10002, pstmt-20000, rs-50000} Header: [id, username, password]
+2019-09-19 16:32:04 [main] DEBUG druid.sql.ResultSet - 
+{conn-10002, pstmt-20000, rs-50000} Result: [1, lsh, 123456]
+2019-09-19 16:32:04 [main] DEBUG druid.sql.ResultSet - 
+{conn-10002, pstmt-20000, rs-50000} closed
+2019-09-19 16:32:04 [main] DEBUG druid.sql.Connection - 
+{conn-10002} pool-recycle
+2019-09-19 16:33:38 [main] DEBUG druid.sql.Connection - 
+{conn-10001,procId-76} connected
+2019-09-19 16:33:38 [main] DEBUG druid.sql.Connection - 
+{conn-10002,procId-77} connected
+2019-09-19 16:33:38 [main] INFO  com.alibaba.druid.pool.DruidDataSource - 
+{dataSource-1} inited
+2019-09-19 16:33:38 [main] DEBUG druid.sql.Connection - 
+{conn-10002} pool-connect
+2019-09-19 16:33:38 [main] DEBUG druid.sql.ResultSet - 
+{conn-10002, pstmt-20000, rs-50000} open
+2019-09-19 16:33:38 [main] DEBUG druid.sql.ResultSet - 
+{conn-10002, pstmt-20000, rs-50000} Header: [id, username, password]
+2019-09-19 16:33:38 [main] DEBUG druid.sql.ResultSet - 
+{conn-10002, pstmt-20000, rs-50000} Result: [2, admin, admin]
+2019-09-19 16:33:38 [main] DEBUG druid.sql.ResultSet - 
+{conn-10002, pstmt-20000, rs-50000} closed
+2019-09-19 16:33:38 [main] DEBUG druid.sql.Connection - 
+{conn-10002} pool-recycle
+2019-09-19 16:34:42 [main] DEBUG druid.sql.Connection - 
+{conn-10001,procId-78} connected
+2019-09-19 16:34:42 [main] DEBUG druid.sql.Connection - 
+{conn-10002,procId-79} connected
+2019-09-19 16:34:42 [main] INFO  com.alibaba.druid.pool.DruidDataSource - 
+{dataSource-1} inited
+2019-09-19 16:34:42 [main] DEBUG druid.sql.Connection - 
+{conn-10002} pool-connect
+2019-09-19 16:34:42 [main] DEBUG druid.sql.ResultSet - 
+{conn-10002, pstmt-20000, rs-50000} open
+2019-09-19 16:34:42 [main] DEBUG druid.sql.ResultSet - 
+{conn-10002, pstmt-20000, rs-50000} Header: [id, username, password]
+2019-09-19 16:34:42 [main] DEBUG druid.sql.ResultSet - 
+{conn-10002, pstmt-20000, rs-50000} Result: [2, admin, admin]
+2019-09-19 16:34:42 [main] DEBUG druid.sql.ResultSet - 
+{conn-10002, pstmt-20000, rs-50000} closed
+2019-09-19 16:34:42 [main] DEBUG druid.sql.Connection - 
+{conn-10002} pool-recycle
+2019-09-19 16:35:03 [main] DEBUG druid.sql.Connection - 
+{conn-10001,procId-80} connected
+2019-09-19 16:35:03 [main] DEBUG druid.sql.Connection - 
+{conn-10002,procId-81} connected
+2019-09-19 16:35:03 [main] INFO  com.alibaba.druid.pool.DruidDataSource - 
+{dataSource-1} inited
+2019-09-19 16:35:03 [main] DEBUG druid.sql.Connection - 
+{conn-10002} pool-connect
+2019-09-19 16:35:03 [main] DEBUG druid.sql.ResultSet - 
+{conn-10002, pstmt-20000, rs-50000} open
+2019-09-19 16:35:03 [main] DEBUG druid.sql.ResultSet - 
+{conn-10002, pstmt-20000, rs-50000} Header: [id, username, password]
+2019-09-19 16:35:03 [main] DEBUG druid.sql.ResultSet - 
+{conn-10002, pstmt-20000, rs-50000} Result: [1, lsh, 123456]
+2019-09-19 16:35:03 [main] DEBUG druid.sql.ResultSet - 
+{conn-10002, pstmt-20000, rs-50000} closed
+2019-09-19 16:35:03 [main] DEBUG druid.sql.Connection - 
+{conn-10002} pool-recycle

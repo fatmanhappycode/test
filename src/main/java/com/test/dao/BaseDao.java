@@ -18,9 +18,7 @@ public abstract class BaseDao<T> {
 
     private BeanListHandler<T> beanListHandler;
 
-    private Class<T> clazz;
     protected BaseDao(Class<T> clazz) {
-        this.clazz = clazz;
         if (clazz == null) {
             throw new IllegalArgumentException("参数不能为空");
         }
