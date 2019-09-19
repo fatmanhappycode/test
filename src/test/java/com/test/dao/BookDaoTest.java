@@ -22,9 +22,4 @@ public class BookDaoTest {
         logger.info("book:{}", book);
     }
 
-    @Test
-    public void testGetList() {
-        List<Book> bookList = bookDao.getBookInfoList();
-        bookList.forEach(e -> logger.info("book:{}", e));
-    }
 }

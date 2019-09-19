@@ -1,4 +1,5 @@
 $(document).on("click", "#login", function () {
+
     var username = $("#inputEmail").val();
     var password = $("#inputPassword").val();
     var saveData={"username":username,"password":password};

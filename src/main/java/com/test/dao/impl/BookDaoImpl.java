@@ -5,7 +5,6 @@ import com.test.dao.BookDao;
 import com.test.pojo.Book;
 import com.test.util.JdbcUtil;
 
-import java.io.Serializable;
 import java.sql.Connection;
 import java.util.List;
 
