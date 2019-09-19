@@ -383,3 +383,39 @@ book:Book[id=11, name='MySQL技术内幕：InnoDB存储引擎', price=7900, auth
 {conn-10002, pstmt-20000, rs-50000} closed
 2019-09-19 21:48:18 [main] DEBUG druid.sql.Connection - 
 {conn-10002} pool-recycle
+2019-09-19 22:33:00 [main] DEBUG druid.sql.Connection - 
+{conn-10001,procId-106} connected
+2019-09-19 22:33:00 [main] DEBUG druid.sql.Connection - 
+{conn-10002,procId-107} connected
+2019-09-19 22:33:00 [main] INFO  com.alibaba.druid.pool.DruidDataSource - 
+{dataSource-1} inited
+2019-09-19 22:33:00 [main] DEBUG druid.sql.Connection - 
+{conn-10002} pool-connect
+2019-09-19 22:33:00 [main] DEBUG druid.sql.ResultSet - 
+{conn-10002, pstmt-20000, rs-50000} open
+2019-09-19 22:33:00 [main] DEBUG druid.sql.ResultSet - 
+{conn-10002, pstmt-20000, rs-50000} Header: [id, name, price, author, isbn]
+2019-09-19 22:33:00 [main] DEBUG druid.sql.ResultSet - 
+{conn-10002, pstmt-20000, rs-50000} Result: [1, Java编程思想, 10800, (美)Bruce Eckel, 9787111213826]
+2019-09-19 22:33:00 [main] DEBUG druid.sql.ResultSet - 
+{conn-10002, pstmt-20000, rs-50000} closed
+2019-09-19 22:33:00 [main] DEBUG druid.sql.Connection - 
+{conn-10002} pool-recycle
+2019-09-19 22:36:36 [main] DEBUG druid.sql.Connection - 
+{conn-10001,procId-108} connected
+2019-09-19 22:36:36 [main] DEBUG druid.sql.Connection - 
+{conn-10002,procId-109} connected
+2019-09-19 22:36:36 [main] INFO  com.alibaba.druid.pool.DruidDataSource - 
+{dataSource-1} inited
+2019-09-19 22:36:36 [main] DEBUG druid.sql.Connection - 
+{conn-10002} pool-connect
+2019-09-19 22:36:36 [main] DEBUG druid.sql.ResultSet - 
+{conn-10002, pstmt-20000, rs-50000} open
+2019-09-19 22:36:36 [main] DEBUG druid.sql.ResultSet - 
+{conn-10002, pstmt-20000, rs-50000} Header: [id, name, price, author, isbn]
+2019-09-19 22:36:36 [main] DEBUG druid.sql.ResultSet - 
+{conn-10002, pstmt-20000, rs-50000} Result: [1, Java编程思想, 10800, (美)Bruce Eckel, 9787111213826]
+2019-09-19 22:36:36 [main] DEBUG druid.sql.ResultSet - 
+{conn-10002, pstmt-20000, rs-50000} closed
+2019-09-19 22:36:36 [main] DEBUG druid.sql.Connection - 
+{conn-10002} pool-recycle
