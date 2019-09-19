@@ -1,11 +1,17 @@
 package com.test.pojo;
 
+import java.util.StringJoiner;
+
 /**
  * @author 肥宅快乐码
  * @date 2019/9/19 - 12:37
- * 存放用户账号密码
+ * User表对应的实体类
  */
 public class User {
+    /**
+     * id
+     */
+    private Integer id;
     /**
      * 用户名
      */
@@ -29,5 +35,23 @@ public class User {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public User setId(Integer id) {
+        this.id = id;
+        return this;
+    }
+
+    @Override
+    public String toString() {
+        return new StringJoiner(", ", User.class.getSimpleName() + "[", "]")
+                .add("id=" + id)
+                .add("username='" + username + "'")
+                .add("password='" + password + "'")
+                .toString();
     }
 }

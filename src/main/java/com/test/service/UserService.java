@@ -1,7 +1,5 @@
 package com.test.service;
 
-import com.test.code.ResultEnum;
-import com.test.dao.UserDAO;
 import com.test.pojo.Result;
 
 /**
@@ -16,7 +14,7 @@ public class UserService {
      * @return Result<String>
      */
     public Result<String> userLogin(String userName, String password) {
-        String token = new UserDAO().isLogin(userName, password);
+        /*String token = new UserDAO().isLogin(userName, password);
         if (!token.equals("")) {
             if (organization != null && !organization.equals("")) {
                 return new ResultDTO<String>(ResultEnum.IS_ORGANIZATION.getCode(), token, ResultEnum.IS_ORGANIZATION.getMsg());
@@ -25,6 +23,7 @@ public class UserService {
             }
         } else {
             return new ResultDTO<String>(ResultEnum.LOGIN_ERROR.getCode(), null, ResultEnum.LOGIN_ERROR.getMsg());
-        }
+        }*/
+        return null;
     }
 }

@@ -1,0 +1,86 @@
+2019-09-19 14:55:40 [main] INFO  com.alibaba.druid.pool.DruidDataSource - 
+{dataSource-1} inited
+2019-09-19 14:55:43 [Druid-ConnectionPool-Create-1316061703] ERROR com.alibaba.druid.pool.DruidDataSource - 
+create connection SQLException, url: jdbc:mysql://localhost:3306/test?characterEncoding=utf-8&serverTimezone=GMT%2B8, errorCode 1049, state 42000
+java.sql.SQLSyntaxErrorException: Unknown database 'test'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1643)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1709)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2715)
+2019-09-19 14:55:43 [Druid-ConnectionPool-Create-1316061703] ERROR com.alibaba.druid.pool.DruidDataSource - 
+create connection SQLException, url: jdbc:mysql://localhost:3306/test?characterEncoding=utf-8&serverTimezone=GMT%2B8, errorCode 1049, state 42000
+java.sql.SQLSyntaxErrorException: Unknown database 'test'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1643)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1709)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2715)
+2019-09-19 14:55:43 [Druid-ConnectionPool-Create-1316061703] INFO  com.alibaba.druid.pool.DruidAbstractDataSource - 
+{dataSource-1} failContinuous is true
+2019-09-19 14:56:34 [main] INFO  com.alibaba.druid.pool.DruidDataSource - 
+{dataSource-1} inited
+2019-09-19 14:56:36 [main] INFO  com.test.JdbcUtilTest - 
+connection.class:class com.alibaba.druid.pool.DruidPooledConnection
+2019-09-19 14:59:53 [main] INFO  com.alibaba.druid.pool.DruidDataSource - 
+{dataSource-1} inited
+2019-09-19 14:59:54 [main] INFO  com.test.JdbcUtilTest - 
+connection.class:class com.alibaba.druid.pool.DruidPooledConnection
+2019-09-19 15:41:17 [main] INFO  com.alibaba.druid.pool.DruidDataSource - 
+{dataSource-1} inited
+2019-09-19 15:43:18 [main] INFO  com.alibaba.druid.pool.DruidDataSource - 
+{dataSource-1} inited
+2019-09-19 15:44:36 [main] INFO  com.alibaba.druid.pool.DruidDataSource - 
+{dataSource-1} inited
+2019-09-19 15:45:01 [main] INFO  com.alibaba.druid.pool.DruidDataSource - 
+{dataSource-1} inited
+2019-09-19 15:45:42 [main] INFO  com.alibaba.druid.pool.DruidDataSource - 
+{dataSource-1} inited
+2019-09-19 15:46:26 [main] INFO  com.alibaba.druid.pool.DruidDataSource - 
+{dataSource-1} inited
+2019-09-19 15:47:56 [main] INFO  com.alibaba.druid.pool.DruidDataSource - 
+{dataSource-1} inited
+2019-09-19 15:51:54 [main] INFO  com.alibaba.druid.pool.DruidDataSource - 
+{dataSource-1} inited
+2019-09-19 15:54:00 [main] INFO  com.alibaba.druid.pool.DruidDataSource - 
+{dataSource-1} inited
+2019-09-19 15:55:16 [main] INFO  com.alibaba.druid.pool.DruidDataSource - 
+{dataSource-1} inited
+2019-09-19 15:58:21 [main] INFO  com.alibaba.druid.pool.DruidDataSource - 
+{dataSource-1} inited
+2019-09-19 15:59:45 [main] INFO  com.alibaba.druid.pool.DruidDataSource - 
+{dataSource-1} inited
+2019-09-19 16:03:46 [main] INFO  com.alibaba.druid.pool.DruidDataSource - 
+{dataSource-1} inited
+2019-09-19 16:05:02 [main] INFO  com.alibaba.druid.pool.DruidDataSource - 
+{dataSource-1} inited
+2019-09-19 16:07:27 [main] INFO  com.alibaba.druid.pool.DruidDataSource - 
+{dataSource-1} inited
+2019-09-19 16:08:31 [main] INFO  com.alibaba.druid.pool.DruidDataSource - 
+{dataSource-1} inited
+2019-09-19 16:09:26 [main] INFO  com.alibaba.druid.pool.DruidDataSource - 
+{dataSource-1} inited
+2019-09-19 16:11:26 [main] INFO  com.alibaba.druid.pool.DruidDataSource - 
+{dataSource-1} inited
+2019-09-19 16:12:40 [main] INFO  com.alibaba.druid.pool.DruidDataSource - 
+{dataSource-1} inited
+2019-09-19 16:15:19 [main] INFO  com.alibaba.druid.pool.DruidDataSource - 
+{dataSource-1} inited
+2019-09-19 16:17:07 [main] INFO  com.alibaba.druid.pool.DruidDataSource - 
+{dataSource-1} inited
+2019-09-19 16:20:17 [main] INFO  com.alibaba.druid.pool.DruidDataSource - 
+{dataSource-1} inited
+2019-09-19 16:20:36 [main] INFO  com.alibaba.druid.pool.DruidDataSource - 
+{dataSource-1} inited
+2019-09-19 16:21:53 [main] INFO  com.alibaba.druid.pool.DruidDataSource - 
+{dataSource-1} inited
