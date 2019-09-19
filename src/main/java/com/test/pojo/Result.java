@@ -1,5 +1,7 @@
 package com.test.pojo;
 
+import com.test.code.ResultEnum;
+
 /**
  * @author 肥宅快乐码
  * @date 2018/10/11 - 22:27
@@ -54,6 +56,24 @@ public class Result<T> {
         this.msg = msg;
     }
 
+    public Result<T> setResult(int code, String msg, T data) {
+        this.code = code;
+        this.msg = msg;
+        this.data = data;
+        return this;
+    }
+
+    public Result<T> setResult(int code, String msg) {
+        this.code = code;
+        this.msg = msg;
+        return this;
+    }
+
+    public Result<T> setResult(ResultEnum resultEnum){
+        this.code = resultEnum.getCode();
+        this.msg = resultEnum.getMsg();
+        return this;
+    }
     @Override
     public String toString() {
         return "Result [code=" + code + ", data=" + data + ", msg=" + msg + "]";

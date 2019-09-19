@@ -6,6 +6,7 @@ import org.apache.commons.dbutils.handlers.BeanHandler;
 import org.apache.commons.dbutils.handlers.BeanListHandler;
 
 import java.sql.Connection;
+import java.util.List;
 
 /**
  * @author LeeShuhang 1142245564@qq.com
@@ -24,7 +25,7 @@ public abstract class BaseDao<T> {
         }
         queryRunner = new QueryRunner();
         beanHandler = new BeanHandler<>(clazz);
-        beanListHandler = new BeanListHandler<>(clazz);
+        beanListHandler =  new BeanListHandler<>(clazz);
     }
 
     /**
@@ -40,6 +41,18 @@ public abstract class BaseDao<T> {
         T result = null;
         try {
             result = queryRunner.query(connection, sql, this.beanHandler, args);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return result;
+    }
+
+    protected List<T> selectList(Connection connection,
+                                 String sql,
+                                 Object... args) {
+        List<T> result = null;
+        try {
+            result = queryRunner.query(connection, sql, this.beanListHandler, args);
         } catch (Exception e) {
             e.printStackTrace();
         }

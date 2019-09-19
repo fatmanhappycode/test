@@ -19,4 +19,5 @@ public class UserDaoTest {
         User user = userDao.login("lsh","123456");
         System.out.println(user);
     }
+
 }

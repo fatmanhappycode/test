@@ -2,9 +2,11 @@ package com.test.code;
 
 public enum ResultEnum {
     /** 密码错误 */
-    LOGIN_PASSWORD_ERROR(401,"密码错误"),
+    LOGIN_PASSWORD_ERROR(401,"用户名或密码错误"),
     /** 登录成功 */
     LOGIN_SUCCESS(200,"登录成功"),
+    /** 用户名或密码为空 */
+    USERNAME_PASSWORD_EMPTY(402,"用户名或密码不能为空"),
     ;
 
     /** 状态码 */
