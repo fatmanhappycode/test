@@ -1,13 +1,14 @@
 $(document).on("click", "#login", function () {
+    alert(123);
     var username = $("#inputEmail").val();
     var password = $("#inputPassword").val();
+    var saveData={"username":username,"password":password};
     $.ajax({
         url: "/login",
         type: "POST",
         dataType: "json",
-        async: true,
         contentType: "application/json;charset=utf-8",
-        data: {"username": username, "password": password},
+        data: JSON.stringify(saveData),
         success: function (result) {
             if (result.code == 200) {
                 alert(result.msg);
