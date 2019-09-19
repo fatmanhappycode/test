@@ -38,7 +38,9 @@ public class UserServiceImpl implements UserService {
         if (user == null) {
             return result.setResult(ResultEnum.LOGIN_PASSWORD_ERROR);
         }
+
         session.setAttribute("user", user);
+        logger.info("用户{}登录成功！", username);
         return result.setResult(ResultEnum.LOGIN_SUCCESS);
     }
 

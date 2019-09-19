@@ -365,3 +365,21 @@ book:Book[id=9, name='Java核心技术 卷I：基础知识', price=11900, author
 book:Book[id=10, name='Java核心技术 卷II：高级特性', price=13900, author='（美）Horstmann', isbn='9787111573319']
 2019-09-19 17:42:14 [main] INFO  com.test.dao.BookDaoTest - 
 book:Book[id=11, name='MySQL技术内幕：InnoDB存储引擎', price=7900, author='姜承尧', isbn='9787111422068']
+2019-09-19 21:48:18 [main] DEBUG druid.sql.Connection - 
+{conn-10001,procId-104} connected
+2019-09-19 21:48:18 [main] DEBUG druid.sql.Connection - 
+{conn-10002,procId-105} connected
+2019-09-19 21:48:18 [main] INFO  com.alibaba.druid.pool.DruidDataSource - 
+{dataSource-1} inited
+2019-09-19 21:48:18 [main] DEBUG druid.sql.Connection - 
+{conn-10002} pool-connect
+2019-09-19 21:48:18 [main] DEBUG druid.sql.ResultSet - 
+{conn-10002, pstmt-20000, rs-50000} open
+2019-09-19 21:48:18 [main] DEBUG druid.sql.ResultSet - 
+{conn-10002, pstmt-20000, rs-50000} Header: [id, username, password]
+2019-09-19 21:48:18 [main] DEBUG druid.sql.ResultSet - 
+{conn-10002, pstmt-20000, rs-50000} Result: [1, lsh, 123456]
+2019-09-19 21:48:18 [main] DEBUG druid.sql.ResultSet - 
+{conn-10002, pstmt-20000, rs-50000} closed
+2019-09-19 21:48:18 [main] DEBUG druid.sql.Connection - 
+{conn-10002} pool-recycle

@@ -14,6 +14,14 @@ import java.util.List;
  */
 public class BookDaoImpl extends BaseDao<Book> implements BookDao {
 
+    private static final BookDaoImpl BOOK_DAO;
+
+
+
+    static {
+        BOOK_DAO = new BookDaoImpl();
+    }
+
     private static final String GET_BY_ID_SQL = "SELECT `id`,`name`,`price`,`author`,`isbn`" +
             "FROM `book` " +
             "WHERE `id` = ? " +
@@ -22,7 +30,7 @@ public class BookDaoImpl extends BaseDao<Book> implements BookDao {
     private static final String GET_LIST = "SELECT `id`,`name`,`price`,`author`,`isbn`" +
             "FROM `book`";
 
-    public BookDaoImpl() {
+    private BookDaoImpl() {
         super(Book.class);
     }
 
@@ -40,5 +48,9 @@ public class BookDaoImpl extends BaseDao<Book> implements BookDao {
         List<Book> bookList = super.selectList(connection, GET_LIST);
         JdbcUtil.closeConnection(connection);
         return bookList;
+    }
+
+    public static BookDaoImpl getInstance(){
+        return BookDaoImpl.BOOK_DAO;
     }
 }

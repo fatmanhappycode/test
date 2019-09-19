@@ -1,5 +1,6 @@
 package com.test.dao;
 
+import com.test.dao.impl.UserDaoImpl;
 import com.test.pojo.User;
 import org.junit.Test;
 

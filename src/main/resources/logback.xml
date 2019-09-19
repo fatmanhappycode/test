@@ -55,7 +55,8 @@
     <root level="INFO">
         <appender-ref ref="STDOUT"/>
     </root>
-    <logger name="druid.sql" level="TRACE">
+
+    <logger name="druid.sql" level="DEBUG">
         <appender-ref ref="STDOUT"/>
     </logger>
 </configuration>

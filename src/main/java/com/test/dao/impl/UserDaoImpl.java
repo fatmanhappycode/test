@@ -14,20 +14,29 @@ import java.sql.SQLException;
  */
 public class UserDaoImpl extends BaseDao<User> implements UserDao {
 
+    private static final UserDaoImpl USER_DAO;
+    static {
+        USER_DAO = new UserDaoImpl();
+    }
+
     private static final String LOGIN_SQL = "SELECT `id`,`username`,`password` " +
             "FROM `user` " +
             "WHERE `username` = ? AND `password` = ? " +
             "LIMIT 1;";
 
-    public UserDaoImpl() {
+    private UserDaoImpl() {
         super(User.class);
     }
 
     @Override
     public User login(String username, String password) throws SQLException {
         Connection conn = JdbcUtil.getConnection();
-        User user =super.selectOne(conn, LOGIN_SQL, username, password);
+        User user = super.selectOne(conn, LOGIN_SQL, username, password);
         JdbcUtil.closeConnection(conn);
         return user;
+    }
+
+    public static UserDaoImpl getInstance(){
+        return UserDaoImpl.USER_DAO;
     }
 }

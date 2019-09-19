@@ -10,12 +10,11 @@ $(document).on("click", "#login", function () {
         contentType: "application/json;charset=utf-8",
         data: JSON.stringify(saveData),
         success: function (result) {
-            if (result.code == 200) {
+            if (result.code === 200) {
                 alert(result.msg);
-            } else if (result.code == 401) {
-                alert(result.msg);
+            } else if (result.code === 401) {
+
             } else {
-                // doSomething
             }
         }
     })
