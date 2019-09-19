@@ -1,29 +1,21 @@
 package com.test.service;
 
+
 import com.test.pojo.Result;
+
+import javax.servlet.http.HttpSession;
 
 /**
  * @author 肥宅快乐码
- * @date 2018/10/28 - 16:15
  */
-public class UserService {
+public interface UserService {
+
     /**
-     * 判断登录成功与否
-     * @param userName
-     * @param password
-     * @return Result<String>
+     * 登录业务，失败返回错误信息，成功则将用户信息保存到session
+     * @param username 用户名
+     * @param password 密码
+     * @param session HttpSession
+     * @return
      */
-    public Result<String> userLogin(String userName, String password) {
-        /*String token = new UserDAO().isLogin(userName, password);
-        if (!token.equals("")) {
-            if (organization != null && !organization.equals("")) {
-                return new ResultDTO<String>(ResultEnum.IS_ORGANIZATION.getCode(), token, ResultEnum.IS_ORGANIZATION.getMsg());
-            } else {
-                return new Result<String>(ResultEnum.LOGIN_SUCCESS.getCode(), null, ResultEnum.LOGIN_SUCCESS.getMsg());
-            }
-        } else {
-            return new ResultDTO<String>(ResultEnum.LOGIN_ERROR.getCode(), null, ResultEnum.LOGIN_ERROR.getMsg());
-        }*/
-        return null;
-    }
+    Result<Boolean> login(String username, String password, HttpSession session);
 }

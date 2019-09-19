@@ -1,5 +1,6 @@
 package com.test.pojo;
 
+import java.io.Serializable;
 import java.util.StringJoiner;
 
 /**
@@ -7,7 +8,10 @@ import java.util.StringJoiner;
  * @date 2019/9/19 - 12:37
  * User表对应的实体类
  */
-public class User {
+public class User implements Serializable {
+
+    private static final long serialVersionUID = 7643840838398684546L;
+
     /**
      * id
      */
