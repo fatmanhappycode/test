@@ -24,7 +24,7 @@ import java.io.PrintWriter;
 @WebServlet(urlPatterns = {"/login"})
 public class LoginServlet extends BaseServlet {
 
-    private static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = -1446516228185627862L;
 
     private final UserService userService = ServiceFactory.getUserService();
 

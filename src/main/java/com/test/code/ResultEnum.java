@@ -7,6 +7,8 @@ public enum ResultEnum {
     LOGIN_SUCCESS(200,"登录成功"),
     /** 用户名或密码为空 */
     USERNAME_PASSWORD_EMPTY(402,"用户名或密码不能为空"),
+    /** 未登录，拒绝访问 */
+    USER_NOT_LOGIN_IN(403,"用户未登录，拒绝访问"),
     ;
 
     /** 状态码 */

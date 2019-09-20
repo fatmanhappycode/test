@@ -12,18 +12,16 @@ public class DaoFactory {
 
     private static BookDao BOOK_DAO;
 
+    static {
+        USER_DAO = UserDaoImpl.getInstance();
+        BOOK_DAO = BookDaoImpl.getInstance();
+    }
 
-    public static UserDao getUserDao(){
-        if (USER_DAO == null){
-            USER_DAO = UserDaoImpl.getInstance();
-        }
+    public static UserDao getUserDao() {
         return DaoFactory.USER_DAO;
     }
 
-    public static BookDao getBookDao(){
-        if (BOOK_DAO == null){
-            BOOK_DAO = BookDaoImpl.getInstance();
-        }
+    public static BookDao getBookDao() {
         return DaoFactory.BOOK_DAO;
     }
 }

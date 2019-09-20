@@ -22,6 +22,16 @@ public class UserServiceImpl implements UserService {
 
     private UserDao userDao = DaoFactory.getUserDao();
 
+    private static final UserServiceImpl USER_SERVICE;
+
+    static {
+        USER_SERVICE = new UserServiceImpl();
+    }
+
+    private UserServiceImpl(){
+
+    }
+
     @Override
     public Result<Boolean> login(String username, String password, HttpSession session) {
         Result<Boolean> result = new Result<>();
@@ -44,4 +54,7 @@ public class UserServiceImpl implements UserService {
         return result.setResult(ResultEnum.LOGIN_SUCCESS);
     }
 
+    public static UserServiceImpl getInstance(){
+        return USER_SERVICE;
+    }
 }

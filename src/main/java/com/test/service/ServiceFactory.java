@@ -15,8 +15,8 @@ public class ServiceFactory {
     private static final BookService BOOK_SERVICE;
 
     static {
-        USER_SERVICE = new UserServiceImpl();
-        BOOK_SERVICE = new BookServiceImpl();
+        USER_SERVICE = UserServiceImpl.getInstance();
+        BOOK_SERVICE = BookServiceImpl.getInstance();
     }
 
     public static UserService getUserService(){
