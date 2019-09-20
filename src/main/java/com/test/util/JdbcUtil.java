@@ -64,16 +64,18 @@ public class JdbcUtil {
         dataSource.setPoolPreparedStatements(Boolean.parseBoolean(props.getProperty("druid.poolPreparedStatements")));
         dataSource.setMaxPoolPreparedStatementPerConnectionSize(Integer.parseInt(props.getProperty("druid.maxPoolPrepareStatementPerConnectionSize")));
         dataSource.setConnectionProperties(props.getProperty("druid.connectionProperties"));
-
-        Slf4jLogFilter filter = new Slf4jLogFilter();
+        /*Slf4jLogFilter filter = new Slf4jLogFilter();
         List<Filter> filterList = new ArrayList<>(1);
 
         filter.setStatementExecutableSqlLogEnable(true);
-        filter.setStatementLogEnabled(false);
+        filter.setStatementLogEnabled(true);
         filter.setStatementLogErrorEnabled(true);
         filterList.add(filter);
-        dataSource.setProxyFilters(filterList);
+
+        dataSource.setProxyFilters(filterList);*/
+
         try {
+            dataSource.addFilters("slf4j");
             dataSource.init();
         } catch (SQLException e) {
             e.printStackTrace();

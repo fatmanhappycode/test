@@ -2,7 +2,7 @@ package com.test.service.impl;
 
 import com.alibaba.druid.util.StringUtils;
 import com.test.code.ResultEnum;
-import com.test.dao.DaoFactory;
+import com.test.factory.DaoFactory;
 import com.test.dao.UserDao;
 import com.test.pojo.Result;
 import com.test.pojo.User;

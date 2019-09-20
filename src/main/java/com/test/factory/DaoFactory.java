@@ -1,5 +1,7 @@
-package com.test.dao;
+package com.test.factory;
 
+import com.test.dao.BookDao;
+import com.test.dao.UserDao;
 import com.test.dao.impl.BookDaoImpl;
 import com.test.dao.impl.UserDaoImpl;
 

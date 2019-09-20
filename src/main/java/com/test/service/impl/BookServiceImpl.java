@@ -1,12 +1,11 @@
 package com.test.service.impl;
 
 import com.test.dao.BookDao;
-import com.test.dao.DaoFactory;
+import com.test.factory.DaoFactory;
 import com.test.pojo.Book;
 import com.test.pojo.Result;
 import com.test.service.BookService;
 
-import java.io.Serializable;
 import java.util.List;
 
 /**

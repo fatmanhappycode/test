@@ -1,9 +1,9 @@
-package com.test.service;
+package com.test.factory;
 
+import com.test.service.BookService;
+import com.test.service.UserService;
 import com.test.service.impl.BookServiceImpl;
 import com.test.service.impl.UserServiceImpl;
-
-import java.io.Serializable;
 
 /**
  * @author LeeShuhang 1142245564@qq.com

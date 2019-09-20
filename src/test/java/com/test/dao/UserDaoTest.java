@@ -1,10 +1,9 @@
 package com.test.dao;
 
-import com.test.dao.impl.UserDaoImpl;
+import com.test.factory.DaoFactory;
 import com.test.pojo.User;
 import org.junit.Test;
 
-import java.io.Serializable;
 import java.sql.SQLException;
 
 /**

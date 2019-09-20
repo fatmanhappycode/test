@@ -1,23 +1,25 @@
-package com.test.controllor;
+package com.test.controller;
 
+import com.test.annotation.ServletProxyTarget;
 import com.test.pojo.Book;
 import com.test.pojo.Result;
 import com.test.service.BookService;
-import com.test.service.ServiceFactory;
+import com.test.factory.ServiceFactory;
 
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.io.Serializable;
 import java.util.List;
 
 /**
  * @author LeeShuhang 1142245564@qq.com
  */
-@WebServlet(urlPatterns = {"/book"})
-public class BookServlet extends BaseServlet {
+@ServletProxyTarget(name = "bookServlet", urlPatterns = {"/book"})
+public class BookServlet extends HttpServlet {
+
+    private static final long serialVersionUID = -8104002398398851034L;
 
     private BookService bookService = ServiceFactory.getBookService();
 
@@ -25,6 +27,5 @@ public class BookServlet extends BaseServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         Result<List<Book>> result = bookService.getBookList();
         req.setAttribute("result", result);
-        super.doGet(req, resp);
     }
 }

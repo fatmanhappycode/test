@@ -1,11 +1,10 @@
 package com.test.dao;
 
+import com.test.factory.DaoFactory;
 import com.test.pojo.Book;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-import java.util.List;
 
 /**
  * @author LeeShuhang 1142245564@qq.com

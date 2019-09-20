@@ -1,28 +1,24 @@
-package com.test.controllor;
+package com.test.controller;
 
 import com.alibaba.fastjson.JSONObject;
-import com.google.gson.Gson;
+import com.test.annotation.ServletProxyTarget;
 import com.test.pojo.Result;
-import com.test.pojo.User;
-import com.test.service.ServiceFactory;
+import com.test.factory.ServiceFactory;
 import com.test.service.UserService;
 
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.PrintWriter;
 
 /**
  * @author 肥宅快乐码
  * @date 2018/10/11 - 22:50
  */
-@WebServlet(urlPatterns = {"/login"})
-public class LoginServlet extends BaseServlet {
+@ServletProxyTarget(name = "loginServlet", urlPatterns = {"/login"})
+public class LoginServlet extends HttpServlet {
 
     private static final long serialVersionUID = -1446516228185627862L;
 
@@ -36,6 +32,5 @@ public class LoginServlet extends BaseServlet {
                 requestBody.getString("password"),
                 session);
         req.setAttribute("result", result);
-        super.doPost(req, resp);
     }
 }
